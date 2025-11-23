@@ -15,6 +15,8 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=Sani-Mohibur&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Sani-Mohibur's Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sani-Mohibur&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Langs" />
+  <br/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Sani-Mohibur&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
