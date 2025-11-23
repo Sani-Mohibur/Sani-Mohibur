@@ -5,6 +5,10 @@
 I'm a Full Stack Developer who enjoys long walks in codebases. Always up for cool projects, bad jokes, and good coffee!
 
 ---
+### 🏆 Trophies
+<p align="left">
+  <img src="https://github-profile-trophy.vercel.app/?username=Sani-Mohibur&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="Sani-Mohibur Trophies" />
+</p>
 
 ### 🛠️ Tech Stack
 <p align="left">
@@ -35,7 +39,7 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 <a href="https://www.linkedin.com/in/sani-mohibur" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="sani-mohibur" /></a>
 <a href="https://sani-mohibur.github.io/portfolio" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=html5&logoColor=white" alt="Portfolio" /></a>
 <a href="https://x.com/sanimohibur" target="blank"><img align="center" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="sanimohibur" /></a>
-<img src="https://komarev.com/ghpvc/?username=Sani-Mohibur&label=Profile%20Views&color=0ea5e9&style=flat" alt="Profile Views" />
+<img src="https://komarev.com/ghpvc/?username=Sani-Mohibur&label=Profile%20Views&color=0ea5e9&style=for-the-badge" alt="Profile Views" />
 </p>
 
 ### ⚡ Recent Activity
