@@ -42,6 +42,11 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 <img src="https://komarev.com/ghpvc/?username=Sani-Mohibur&label=Profile%20Views&color=0ea5e9&style=for-the-badge" alt="Profile Views" />
 </p>
 
+### 😂 Random Dev Joke
+<p align="left">
+  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight" alt="Jokes Card" />
+</p>
+
 ### ⚡ Recent Activity
 <!--START_SECTION:activity-->
 * 🔨 Pushed 0 commit(s) to [Sani-Mohibur/Sani-Mohibur](https://github.com/Sani-Mohibur/Sani-Mohibur)
