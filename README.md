@@ -51,7 +51,7 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 <!--START_SECTION:activity-->
 * 🔨 Pushed 0 commit(s) to [Sani-Mohibur/portfolio](https://github.com/Sani-Mohibur/portfolio)
 * 🔨 Pushed 0 commit(s) to [Sani-Mohibur/portfolio](https://github.com/Sani-Mohibur/portfolio)
-* 🔨 Pushed 0 commit(s) to [Sani-Mohibur/TypeScript](https://github.com/Sani-Mohibur/TypeScript)
-* 🔨 Pushed 0 commit(s) to [Sani-Mohibur/TypeScript](https://github.com/Sani-Mohibur/TypeScript)
-* 🔨 Pushed 0 commit(s) to [Sani-Mohibur/TypeScript](https://github.com/Sani-Mohibur/TypeScript)
+* 🔨 Pushed 0 commit(s) to [Sani-Mohibur/portfolio](https://github.com/Sani-Mohibur/portfolio)
+* 🔨 Pushed 0 commit(s) to [Sani-Mohibur/portfolio](https://github.com/Sani-Mohibur/portfolio)
+* 🔨 Pushed 0 commit(s) to [Sani-Mohibur/portfolio](https://github.com/Sani-Mohibur/portfolio)
 <!--END_SECTION:activity-->
