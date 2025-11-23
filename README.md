@@ -1,16 +1,26 @@
-## Hi there 👋
+# Hi there, I'm Mohibur Rahman Sani! 👋
 
-<!--
-**Sani-Mohibur/Sani-Mohibur** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### A part-time coder, full-time bug wrangler.
+I'm a Full Stack Developer who enjoys long walks in codebases. Always up for cool projects, bad jokes, and good coffee!
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🛠️ Tech Stack
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,python,tailwind,redux,nodejs,express,postgres&perline=10" />
+</p>
+
+### 📊 GitHub Stats
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=Sani-Mohibur&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Sani-Mohibur's Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sani-Mohibur&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Langs" />
+</p>
+
+---
+
+### 🔗 Connect with me
+<p align="left">
+<a href="https://www.linkedin.com/in/sani-mohibur" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="sani-mohibur" /></a>
+<a href="https://sani-mohibur.github.io/portfolio" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=html5&logoColor=white" alt="Portfolio" /></a>
+<a href="https://x.com/sanimohibur" target="blank"><img align="center" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="sanimohibur" /></a>
+</p>
