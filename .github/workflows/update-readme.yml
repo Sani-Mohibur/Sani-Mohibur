@@ -2,27 +2,97 @@ name: Update Recent Activity
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
-  workflow_dispatch:
+    - cron: "*/30 * * * *" # Runs every 30 minutes
+  workflow_dispatch: # Allows manual run
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  update-readme:
     runs-on: ubuntu-latest
-    name: Update this repo's README with recent activity
-
     steps:
-      - uses: actions/checkout@v3
-      
-      - uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          # Explicitly set your username to force detection
-          gh_username: Sani-Mohibur
-          COMMIT_MSG: '⚡ Update recent activity'
-          MAX_LINES: 5
-          COMMIT_NAME: GitHub Actions Bot
-          COMMIT_EMAIL: action@github.com
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Update README with Python
+        run: |
+          python -c "
+          import requests
+          import re
+          import os
+
+          USERNAME = 'Sani-Mohibur'
+          API_URL = f'https://api.github.com/users/{USERNAME}/events/public'
+
+          try:
+              # 1. Fetch Events
+              print(f'Fetching events for {USERNAME}...')
+              response = requests.get(API_URL)
+              response.raise_for_status()
+              events = response.json()
+              
+              # 2. Format Activity
+              new_lines = []
+              limit = 5
+              for event in events:
+                  if len(new_lines) >= limit:
+                      break
+                  
+                  type_ = event.get('type')
+                  repo_name = event.get('repo', {}).get('name')
+                  repo_url = f'https://github.com/{repo_name}'
+                  
+                  if not repo_name: continue
+
+                  if type_ == 'PushEvent':
+                      commits = len(event.get('payload', {}).get('commits', []))
+                      new_lines.append(f'* 🔨 Pushed {commits} commit(s) to [{repo_name}]({repo_url})')
+                  elif type_ == 'WatchEvent':
+                      new_lines.append(f'* ⭐ Starred [{repo_name}]({repo_url})')
+                  elif type_ == 'CreateEvent':
+                      new_lines.append(f'* 🎉 Created [{repo_name}]({repo_url})')
+                  elif type_ == 'ForkEvent':
+                      new_lines.append(f'* 🔁 Forked [{repo_name}]({repo_url})')
+                  elif type_ == 'PullRequestEvent':
+                      action = event.get('payload', {}).get('action')
+                      new_lines.append(f'* 📥 {action.capitalize()} PR in [{repo_name}]({repo_url})')
+
+              content_block = '\n'.join(new_lines)
+              print(f'Found {len(new_lines)} activities.')
+
+              # 3. Read and Update README
+              with open('README.md', 'r', encoding='utf-8') as f:
+                  readme = f.read()
+
+              # Regex to find the block
+              pattern = r'(<!--START_SECTION:activity-->)([\s\S]*?)(<!--END_SECTION:activity-->)'
+              replacement = f'\g<1>\n{content_block}\n\g<3>'
+              
+              new_readme = re.sub(pattern, replacement, readme)
+              
+              with open('README.md', 'w', encoding='utf-8') as f:
+                  f.write(new_readme)
+              
+              print('README updated successfully.')
+
+          except Exception as e:
+              print(f'Error: {e}')
+              exit(1)
+          "
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || (git commit -m "⚡ Update recent activity" && git push)
