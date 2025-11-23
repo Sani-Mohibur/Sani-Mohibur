@@ -25,3 +25,5 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 <a href="https://sani-mohibur.github.io/portfolio" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=html5&logoColor=white" alt="Portfolio" /></a>
 <a href="https://x.com/sanimohibur" target="blank"><img align="center" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="sanimohibur" /></a>
 </p>
+
+### ⚡ Recent Activity
