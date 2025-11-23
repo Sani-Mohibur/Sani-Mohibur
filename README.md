@@ -27,3 +27,6 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 </p>
 
 ### ⚡ Recent Activity
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
