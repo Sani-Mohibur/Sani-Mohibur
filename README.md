@@ -20,13 +20,12 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 ---
 
 ### 🐍 Contribution Snake
-
 <p align="left">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://www.google.com/search?q=https://raw.githubusercontent.com/Sani-Mohibur/Sani-Mohibur/output/github-contribution-grid-snake-dark.svg">
-<source media="(prefers-color-scheme: light)" srcset="https://www.google.com/search?q=https://raw.githubusercontent.com/Sani-Mohibur/Sani-Mohibur/output/github-contribution-grid-snake.svg">
-<img alt="github contribution grid snake animation" src="https://www.google.com/search?q=https://raw.githubusercontent.com/Sani-Mohibur/Sani-Mohibur/output/github-contribution-grid-snake.svg">
-</picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sani-Mohibur/Sani-Mohibur/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sani-Mohibur/Sani-Mohibur/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Sani-Mohibur/Sani-Mohibur/output/github-contribution-grid-snake.svg">
+  </picture>
 </p>
 
 ### 🔗 Connect with me
