@@ -35,6 +35,8 @@ I'm a Full Stack Developer who enjoys long walks in codebases. Always up for coo
 <a href="https://www.linkedin.com/in/sani-mohibur" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="sani-mohibur" /></a>
 <a href="https://sani-mohibur.github.io/portfolio" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=html5&logoColor=white" alt="Portfolio" /></a>
 <a href="https://x.com/sanimohibur" target="blank"><img align="center" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="sanimohibur" /></a>
+  <br/>
+<img src="https://komarev.com/ghpvc/?username=Sani-Mohibur&label=Profile%20Views&color=0ea5e9&style=flat" alt="Profile Views" />
 </p>
 
 ### ⚡ Recent Activity
