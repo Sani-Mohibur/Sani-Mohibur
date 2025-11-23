@@ -1,3 +1,4 @@
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0ea5e9&height=250&section=header&text=Mohibur%20Rahman%20Sani&fontSize=70&fontAlign=50&fontAlignY=35&desc=Full%20Stack%20Developer&descSize=20&descAlign=50&descAlignY=62&animation=fadeIn)
 # Hi there, I'm Mohibur Rahman Sani! 👋
 
 ### A part-time coder, full-time bug wrangler.
