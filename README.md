@@ -8,11 +8,11 @@ I build modern, scalable, and user-focused web applications. Passionate about cl
 
 ### 🛠 Core Technologies
 
-**Languages:** C++, Java, C#, JavaScript, HTML5, CSS3  
-**Frontend:** React, Tailwind CSS, Bootstrap  
+**Languages:** JavaScript, TypeScript, C++, Java, C# 
+**Frontend:** React, Next.js, Tailwind CSS, Bootstrap, HTML5, CSS3 
 **Backend:** Node.js, Express.js, Socket.IO, PHP  
 **Database:** MySQL, MongoDB  
-**Tools & DevOps:** Git, GitHub, Vite  
+**Tools & DevOps:** Git, GitHub, Vite, Postman  
 **Methodologies:** Agile, Scrum
 
 ---
