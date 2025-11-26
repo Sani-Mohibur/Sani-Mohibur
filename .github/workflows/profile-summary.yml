@@ -1,22 +1,28 @@
-name: GitHub-Profile-Summary-Cards
+name: Update Streak Chart
 
 on:
-  schedule: # Runs every 24 hours
-    - cron: "0 0 * * *"
+  schedule:
+    - cron: "0 */4 * * *" # Runs every 4 hours
   workflow_dispatch: # Allows manual trigger
 
 jobs:
-  build:
+  update-streak:
     runs-on: ubuntu-latest
-    name: generate-github-profile-summary-cards
     permissions:
       contents: write
-
     steps:
       - uses: actions/checkout@v4
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          # This must match the Secret Name you created in the previous step
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
+      
+      - name: Download Streak Image
+        # Downloads your specific streak chart and saves it as 'streak.svg'
+        run: |
+          curl -L -o streak.svg "https://github-readme-streak-stats.herokuapp.com?user=Sani-Mohibur&theme=transparent&hide_border=true"
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add streak.svg
+          # Only commit if the file has changed
+          git commit -m "Update streak chart" || exit 0
+          git push
