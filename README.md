@@ -19,7 +19,7 @@ I build modern, scalable, and user-focused web applications. Passionate about cl
 
 ### 📊 GitHub Summary
 <p align="left">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Sani-Mohibur&theme=transparent&hide_border=true" height="150"/>
+ <img src="./profile-summary-card-output/default/0-profile-details.svg" alt="GitHub Profile Summary" />
 </p>
 
 ---
