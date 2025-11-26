@@ -19,10 +19,7 @@ I build modern, scalable, and user-focused web applications. Passionate about cl
 
 ### 📊 GitHub Summary
 <p align="left">
-  <img src="./profile-summary-card-output/default/1-repos-per-language.svg" alt="Repos per language" />
-  <img src="./profile-summary-card-output/default/2-most-commit-language.svg" alt="Most commit language" />
-  <img src="./profile-summary-card-output/default/4-productive-time.svg" alt="Productive time" />
-
+<img src="./streak.svg" alt="GitHub Streak" />
 </p>
 
 ---
