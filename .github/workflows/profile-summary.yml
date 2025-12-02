@@ -2,35 +2,48 @@ name: Update Streak Chart
 
 on:
   schedule:
-    - cron: "0 */4 * * *"  # Runs every 4 hours
-  workflow_dispatch:        # Allows manual trigger
+    - cron: "0 */4 * * *"    # Runs every 4 hours
+  workflow_dispatch:         # Allows manual trigger
 
 jobs:
   update-streak:
     runs-on: ubuntu-latest
+
     permissions:
-      contents: write
+      contents: write        # Allows pushing changes
 
     steps:
-      - name: Checkout Repository
+      # -----------------------------
+      # 1. Checkout the repository
+      # -----------------------------
+      - name: Checkout Repo
         uses: actions/checkout@v4
 
+      # -----------------------------------------------------------
+      # 2. Download the streak SVG using your PROFILE_TOKEN
+      #    Replace YOUR_USERNAME with your GitHub username
+      # -----------------------------------------------------------
       - name: Download Streak Image
-        uses: DenverCoder1/github-readme-streak-stats@v1.5.0
-        with:
-          github_username: ${{ github.repository_owner }}
-          output_path: streak.svg
-          theme: transparent
-          hide_border: true
-          token: ${{ secrets.GH_TOKEN }}
+        env:
+          TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: |
+          curl -L \
+            -H "Authorization: token $TOKEN" \
+            -o streak.svg \
+            "https://streak-stats.demolab.com?user=Sani-Mohibur&theme=transparent&hide_border=true"
 
-      - name: Commit and Push
+      # -----------------------------------------------------------
+      # 3. Commit and push ONLY IF THE FILE HAS CHANGED
+      # -----------------------------------------------------------
+      - name: Commit and Push If Changed
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
           git add streak.svg
-          
-          # Commit only if the file changed
-          git commit -m "Update streak chart" || exit 0
-          
+
+          # Commit only if there are changes
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+
+          git commit -m "Update streak chart"
           git push
