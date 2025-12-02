@@ -45,6 +45,3 @@ I build modern, scalable, and user-focused web applications. Passionate about cl
 <p align="center">
   <b><i>"Simple can be harder than complex."</i></b> – <i>Unknown</i>
 </p>
-
-
-
