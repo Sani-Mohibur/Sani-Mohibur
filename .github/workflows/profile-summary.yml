@@ -16,14 +16,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download Streak Image
-        run: |
-          curl -L -o streak.svg "https://streak-stats.demolab.com?user=Sani-Mohibur&theme=transparent&hide_border=true"
+        uses: DenverCoder1/github-readme-streak-stats@v1.5.0
+        with:
+          github_username: ${{ github.repository_owner }}
+          output_path: streak.svg
+          theme: transparent
+          hide_border: true
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
           git add streak.svg
           
           # Commit only if the file changed
