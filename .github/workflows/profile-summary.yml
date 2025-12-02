@@ -12,11 +12,16 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Download Streak Image
         # Downloads your specific streak chart and saves it as 'streak.svg'
-        run: |
-          curl -L -o streak.svg "https://github-readme-streak-stats.herokuapp.com?user=Sani-Mohibur&theme=transparent&hide_border=true"
+        uses: DenverCoder1/github-readme-streak-stats-action@v3
+        with:
+          github_username: ${{ github.repository_owner }}
+          output_path: streak.svg
+          theme: transparent
+          hide_border: true
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Commit and Push
         run: |
