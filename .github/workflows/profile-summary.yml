@@ -2,19 +2,20 @@ name: Update Streak Chart
 
 on:
   schedule:
-    - cron: "0 */4 * * *" # Runs every 4 hours
-  workflow_dispatch: # Allows manual trigger
+    - cron: "0 */4 * * *"  # Runs every 4 hours
+  workflow_dispatch:        # Allows manual trigger
 
 jobs:
   update-streak:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Download Streak Image
-        # Downloads your specific streak chart and saves it as 'streak.svg'
         run: |
           curl -L -o streak.svg "https://streak-stats.demolab.com?user=Sani-Mohibur&theme=transparent&hide_border=true"
 
@@ -22,7 +23,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
           git add streak.svg
-          # Only commit if the file has changed
+          
+          # Commit only if the file changed
           git commit -m "Update streak chart" || exit 0
+          
           git push
