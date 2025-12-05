@@ -21,16 +21,27 @@ jobs:
 
       # -----------------------------------------------------------
       # 2. Download the streak SVG using your PROFILE_TOKEN
-      #    Replace YOUR_USERNAME with your GitHub username
+      #    Only overwrite if the download succeeds
       # -----------------------------------------------------------
       - name: Download Streak Image
         env:
           TOKEN: ${{ secrets.PROFILE_TOKEN }}
         run: |
-          curl -L \
+          # Temporary file for safe download
+          TMP_FILE=streak_tmp.svg
+
+          # Attempt download
+          curl -L -f \
             -H "Authorization: token $TOKEN" \
-            -o streak.svg \
-            "https://streak-stats.demolab.com?user=Sani-Mohibur&theme=transparent&hide_border=true"
+            -o $TMP_FILE \
+            "https://streak-stats.demolab.com?user=Sani-Mohibur&theme=transparent&hide_border=true" || echo "Download failed, keeping old streak.svg"
+
+          # If the file exists and is non-empty, move it to streak.svg
+          if [ -s $TMP_FILE ]; then
+            mv $TMP_FILE streak.svg
+          else
+            echo "Skipping update due to failed download."
+          fi
 
       # -----------------------------------------------------------
       # 3. Commit and push ONLY IF THE FILE HAS CHANGED
@@ -47,3 +58,4 @@ jobs:
 
           git commit -m "Update streak chart"
           git push
+
