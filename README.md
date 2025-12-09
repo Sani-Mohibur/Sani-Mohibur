@@ -18,15 +18,15 @@ I build modern, scalable, and user-focused web applications. Passionate about cl
 ---
 
 ### 📊 GitHub Summary
-<!--
+
 <p align="left">
 <img src="./streak.svg" alt="GitHub Streak" />
 </p>
--->
+<!--
 <p align="left">
   <img src="https://streak-stats.demolab.com?user=Sani-Mohibur&theme=transparent&hide_border=true" alt="GitHub Streak" />
 </p>
-
+-->
 ---
 
 ### 🔗 Connect with Me
