@@ -11,7 +11,8 @@ I build modern, scalable, and user-focused web applications. Passionate about cl
 **Languages:** JavaScript, TypeScript, C++, Java, C#  
 **Frontend:** React, Next.js, Tailwind CSS, Bootstrap, HTML5, CSS3  
 **Backend:** Node.js, Express.js, Socket.IO, PHP  
-**Database:** MySQL, MongoDB  
+**Database:** MySQL, MongoDB, PostgreSQL  
+**ORM:** Prisma  
 **Tools & DevOps:** Git, GitHub, Vite, Postman  
 **Methodologies:** Agile, Scrum
 
