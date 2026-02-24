@@ -1,6 +1,6 @@
 # Mohibur Rahman Sani
 
-**Full Stack Developer | MERN | TypeScript**  
+**Backend Developer | MERN | TypeScript**  
 
 I build modern, scalable, and user-focused web applications. Passionate about clean architecture, performance, and maintainable code.
 
