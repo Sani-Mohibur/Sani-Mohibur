@@ -1,22 +1,26 @@
 # Mohibur Rahman Sani
-
-[![View My Animated Profile Banner](https://img.shields.io/badge/View_Animated_Banner-🚀-blueviolet?style=for-the-badge)](https://htmlpreview.github.io/?https://github.com/Sani-Mohibur/banner-page/blob/main/index.html)
-
 **Full Stack Developer | MERN | TypeScript**  
 
 I build modern, scalable, and user-focused web applications. Passionate about clean architecture, performance, and maintainable code.
 
 ---
 
-### 🛠 Core Technologies
+### 💻 Technologies & Skills
 
-**Languages:** JavaScript, TypeScript, C++, Java, C#  
-**Frontend:** React, Next.js, Tailwind CSS, Bootstrap, HTML5, CSS3  
-**Backend:** Node.js, Express.js, Socket.IO  
-**Database:** MySQL, MongoDB, PostgreSQL  
-**ORM:** Prisma  
-**Tools & DevOps:** Git, GitHub, Vite, Postman  
-**Methodologies:** Agile, Scrum
+#### Languages
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=js,ts,cpp,java,cs" alt="Languages" />
+</p>
+
+#### Frontend & Backend
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,html,css,nodejs,express" alt="Web Tech" />
+</p>
+
+#### Databases & Tools
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=mysql,mongodb,postgres,prisma,git,github,vite,postman" alt="Databases and Tools" />
+</p>
 
 ---
 
