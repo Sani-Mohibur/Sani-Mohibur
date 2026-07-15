@@ -1,4 +1,10 @@
+<p align="center">
+  <img src="./github-banner.gif" alt="GitHub Banner" width="100%" />
+</p>
+
 # Mohibur Rahman Sani
+
+
 **Full Stack Developer | MERN | TypeScript**  
 
 I build modern, scalable, and user-focused web applications. Passionate about clean architecture, performance, and maintainable code.
