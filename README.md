@@ -1,6 +1,6 @@
 # Mohibur Rahman Sani
 
-<iframe src="https://sani-mohibur.github.io/banner-page" width="100%" height="300px" style="border:none;"></iframe>
+[![View My Animated Profile Banner](https://img.shields.io/badge/View_Animated_Banner-🚀-blueviolet?style=for-the-badge)](https://htmlpreview.github.io/?https://github.com/Sani-Mohibur/banner-page/blob/main/index.html)
 
 **Full Stack Developer | MERN | TypeScript**  
 
