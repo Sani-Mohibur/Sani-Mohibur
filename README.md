@@ -1,6 +1,6 @@
-<p align="center">
+<!-- <p align="center">
   <img src="./github-banner.gif" alt="GitHub Banner" width="100%" />
-</p>
+</p> -->
 
 # Mohibur Rahman Sani
 
